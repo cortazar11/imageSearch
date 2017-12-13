@@ -31,7 +31,7 @@ app.get('/api/imagesearch/:topic',function(req,res){
 
          var opts = {
             host: 'www.googleapis.com',
-            path: `/customsearch/v1?q=${topic}&cx=010883912489311344045%3Ahfo2o4xvqpi&start=${offset}&key=AIzaSyAEtJnyPhVBMio2F2-6zc8ZejjD8WYkE2o&fields=items(pagemap/cse_image(src),snippet,pagemap/cse_thumbnail(src),link)`,
+            path: `/customsearch/v1?q=${topic}&cx=XXXXXXXXXXXX&start=${offset}&key=XXXXXXXXXXXXXXXXXXXXXXXXXXX&fields=items(pagemap/cse_image(src),snippet,pagemap/cse_thumbnail(src),link)`,
             };
 
         https.get(opts,function(resp){
